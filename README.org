@@ -1,0 +1,59 @@
+#+AUTHOR: Shervin Safavi
+#+EMAIL: research@shervinsafavi.org
+#+PROPERTY: header-args :eval never-export 
+#+OPTIONS: num:nil
+
+
+* Uncovering the organization of neural circuits with generalized phase locking analysis
+
+This repository gathers code for the paper:
+
+[[https://www.biorxiv.org/content/10.1101/2020.12.09.413401v1.abstract][Uncovering the organization of neural circuits with generalized phase locking analysis]] 
+
+This repository has the following structure:
+
+#+BEGIN_SRC sh :results output :exports results :cache yes
+tree -L 2 -d ./
+#+END_SRC
+
+#+RESULTS[533444a45df6f39b1bfca93012307dd90a7a03e6]:
+#+begin_example
+./
+├── localdata
+│   ├── biophysWaveSimul
+│   ├── dataHPsim
+│   ├── explorations
+│   └── handies
+├── src
+│   ├── methods
+│   ├── simulations
+│   ├── unclassified
+│   └── utilities
+└── visualizations
+    ├── figure2
+    ├── figure3
+    ├── figure4
+    ├── figure6
+    ├── figure7
+    └── figure8
+
+20 directories
+#+end_example
+
+MATLAB codes provided in the 'visualizations' folder can be used to reproduce the main figures of this paper (except the schematic figures).
+
+
+
+To reproduce the figures, you need a brief setup as explained below.
+
+** Setup
+- Clone/download the content of the repository in your desired location,
+- Download =localdata= from this [[https://gitlab.tuebingen.mpg.de/multiscale_neuroscience/gpla-submission][repository]]
+- start MATLAB and cd to your chosen location, and =addpath= the location (no nested addpath is required)
+#+BEGIN_SRC matlab :exports code
+addpath path/to/your/desired/location
+#+END_SRC
+- run the =ignit.m= file
+#+BEGIN_SRC matlab :exports code
+run ignit
+#+END_SRC

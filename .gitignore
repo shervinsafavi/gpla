@@ -1,0 +1,46 @@
+# %% gpla-specific
+sandbox/
+*.html
+*.html~
+
+# %% misc.
+# ~ Mac OS
+._*.m
+._*.mlx
+._*.mat
+*.*~
+*.html~
+*.org~
+.DS_Store
+._.DS_Store
+
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# large files
+*.mat
+*.png
+*.tiff
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Matlab code generation folders
+codegen/
+
+# Simulink autosave extension
+*.autosave
+
+# Octave session info
+octave-workspace
